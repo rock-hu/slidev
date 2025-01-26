@@ -1,0 +1,82 @@
+name: slidev-pages
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+      - name: install dependencies
+        run: npm install
+      - name: mkdir presentations
+        run: |
+          mkdir presentations
+          mkdir presentations/backstage
+          mkdir presentations/channels
+          mkdir presentations/gitops
+          mkdir presentations/kubernetes
+          mkdir presentations/site-reliability-engineering
+          mkdir presentations/spring-batch
+          mkdir presentations/spring-boot
+          mkdir presentations/wiremock
+      - name: slidev-backstage
+        run: |
+          npm run dev:backstage
+          mv dist presentations/backstage
+      - name: slidev-channels
+        run: |
+          npm run dev:channels
+          mv dist presentations/channels
+      - name: slidev-gitops
+        run: |
+          npm run dev:gitops
+          mv dist presentations/gitops
+      - name: slidev-kubernetes
+        run: |
+          npm run dev:kubernetes
+          mv dist presentations/kubernetes
+      - name: slidev-site-reliability-engineering
+        run: |
+          npm run dev:site-reliability-engineering
+          mv dist presentations/site-reliability-engineering
+      - name: slidev-spring-batch
+        run: |
+          npm run dev:spring-batch
+          mv dist presentations/spring-batch
+      - name: slidev-spring-boot
+        run: |
+          npm run dev:spring-boot
+          mv dist presentations/spring-boot
+      - name: slidev-wiremock
+        run: |
+          npm run dev:wiremock
+          mv dist presentations/wiremock
+      - name: slidev-index.html
+        run: |
+          cp index.html presentations
+          ls -ltr presentations
+      - uses: actions/configure-pages@v3
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: presentations
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2

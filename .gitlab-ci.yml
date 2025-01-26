@@ -1,0 +1,154 @@
+image: mcr.microsoft.com/playwright:v1.48.0-focal
+before_script:
+  - npm install -g webpack netlify-cli
+  - npm i -g @slidev/cli
+cache:
+  paths:
+    - .npm
+    - node_modules
+stages:
+  - build
+  - package
+  - deploy
+
+# https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
+internal-developer-platform:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:internal-developer-platform
+    - netlify deploy --dir dist --build --prod --debug --site slidev-internal-developer-platform --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/internal-developer-platform/*.md
+          - slides-internal-developer-platform.md
+          - package.json
+          - .gitlab-ci.yml
+backstage:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:backstage
+    - netlify deploy --dir dist --build --prod --debug --site slidev-backstage --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/backstage/*.md
+          - slides-backstage.md
+          - package.json
+          - .gitlab-ci.yml
+channels:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:channels
+    - netlify deploy --dir dist --build --prod --debug --site slidev-channels --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/channels/*.md
+          - slides-channels.md
+          - package.json
+          - .gitlab-ci.yml
+gitops:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:gitops
+    - netlify deploy --dir dist --build --prod --debug --site slidev-gitops --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/gitops/*.md
+          - slides-gitops.md
+          - package.json
+          - .gitlab-ci.yml
+kubernetes:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:kubernetes
+    - netlify deploy --dir dist --build --prod --debug --site slidev-kubernetes --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/kubernetes/*.md
+          - slides-kubernetes.md
+          - package.json
+          - .gitlab-ci.yml
+site-reliability-engineering:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:site-reliability-engineering
+    - netlify deploy --dir dist --build --prod --debug --site slidev-site-reliability-engineering --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/site-reliability-engineering/*.md
+          - slides-site-reliability-engineering.md
+          - package.json
+          - .gitlab-ci.yml
+spring-batch:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:spring-batch
+    - netlify deploy --dir dist --build --prod --debug --site slidev-spring-batch --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/spring-batch/*.md
+          - slides-spring-batch.md
+          - package.json
+          - .gitlab-ci.yml
+spring-boot:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:spring-boot
+    - netlify deploy --dir dist --build --prod --debug --site slidev-spring-boot --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/spring-boot/*.md
+          - slides-spring-boot.md
+          - package.json
+          - .gitlab-ci.yml
+wiremock:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:wiremock
+    - netlify deploy --dir dist --build --prod --debug --site slidev-wiremock --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/wiremock/*.md
+          - slides-wiremock.md
+          - package.json
+          - .gitlab-ci.yml
+mobile:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build:mobile
+    - netlify deploy --dir dist --build --prod --debug --site slidev-mobile --auth $NETLIFY_AUTH_TOKEN --message "${CI_COMMIT_AUTHOR} - ${CI_COMMIT_MESSAGE}"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+      changes:
+        paths:
+          - /slides/mobile/*.md
+          - slides-mobile.md
+          - package.json
+          - .gitlab-ci.yml

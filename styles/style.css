@@ -1,0 +1,14 @@
+:root {
+  --slidev-code-font-size: 12px;
+  --slidev-code-line-height: 12px;
+}
+
+.slidev-layout {
+  p {
+    font-size: 16px
+  }
+
+  ul {
+    font-size: 16px
+  }
+}

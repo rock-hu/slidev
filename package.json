@@ -1,0 +1,50 @@
+{
+  "name": "slidev",
+  "homepage": "https://gitlab.com/internal-developer-platform/slidev",
+  "private": true,
+  "scripts": {
+    "build": "concurrently 'yarn:build:*'",
+    "build:default": "slidev build slides.md",
+    "build:backstage": "slidev build slides-backstage.md",
+    "build:gitops": "slidev build slides-gitops.md",
+    "build:kubernetes": "slidev build slides-kubernetes.md",
+    "build:wiremock": "slidev build slides-wiremock.md",
+    "build:channels": "slidev build slides-channels.md",
+    "build:mobile": "slidev build slides-mobile.md",
+    "build:site-reliability-engineering": "slidev build slides-site-reliability-engineering.md",
+    "build:spring-batch": "slidev build slides-spring-batch.md",
+    "build:spring-boot": "slidev build slides-spring-boot.md",
+    "dev:default": "slidev slides.md",
+    "dev:backstage": "slidev slides-backstage.md",
+    "dev:gitops": "slidev slides-gitops.md",
+    "dev:kubernetes": "slidev slides-kubernetes.md",
+    "dev:wiremock": "slidev slides-wiremock.md",
+    "dev:channels": "slidev slides-channels.md",
+    "dev:mobile": "slidev slides-mobile.md",
+    "dev:site-reliability-engineering": "slidev slides-site-reliability-engineering.md",
+    "dev:spring-batch": "slidev slides-spring-batch.md",
+    "dev:spring-boot": "slidev slides-spring-boot.md",
+    "plop": "plop",
+    "deploy": "gh-pages -d dist --dotfiles true --nojekyll true"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.49.29",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-addon-excalidraw": "^1.0.4",
+    "slidev-component-poll": "^3.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "gh-pages": "^6.2.0",
+    "plop": "^4.0.1",
+    "prettier": "^3.3.3",
+    "prettier-plugin-slidev": "^1.0.5",
+    "shiki": "^1.23.1"
+  },
+  "slidev": {
+    "addons": [
+      "slidev-addon-excalidraw"
+    ]
+  }
+}
