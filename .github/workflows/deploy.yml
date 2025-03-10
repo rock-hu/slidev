@@ -74,9 +74,9 @@ jobs:
           cp index.html presentations
           ls -ltr presentations
       - uses: actions/configure-pages@v3
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: presentations
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
