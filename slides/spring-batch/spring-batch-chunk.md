@@ -54,7 +54,7 @@ public class FaultTolerantChunkProvider<I> extends SimpleChunkProvider<I> {
 
 ```plantuml
 @startuml
-skinparam handwritten true
+!option handwritten true
 skinparam linetype polyline
 skinparam linetype ortho
 
@@ -92,7 +92,7 @@ interface ChunkHandler<T> {
 
 ```plantuml
 @startuml
-skinparam handwritten true
+!option handwritten true
 skinparam linetype polyline
 skinparam linetype ortho
 class SimpleChunkProvider implements ChunkProvider<I> {

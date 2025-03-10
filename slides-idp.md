@@ -16,7 +16,7 @@ drawings:
   # syncAll: true
 
 transition: slide-left
-title: Welcome to Wiremock
+title: Welcome to Identity Platform
 mdc: true
 download: true
 plantUmlServer: 'https://www.plantuml.com/plantuml'
@@ -118,36 +118,4 @@ hide: false
 src: ./slides/wiremock/wiremock-apis.md
 hide: false
 ---
----
-src: ./slides/wiremock/Extending-GlobalSettingsListener.md
----
----
-src: ./slides/wiremock/Extending-MappingsLoaderExtension.md
----
----
-src: ./slides/wiremock/Extending-RequestFilter.md
----
----
-src: ./slides/wiremock/Extending-RequestMatcherExtension.md
----
----
-src: ./slides/wiremock/Extending-ResponseDefinitionTransformer.md
----
----
-src: ./slides/wiremock/Extending-ResponseTransformer.md
----
----
-src: ./slides/wiremock/Extending-ServeEventListener.md
----
----
-src: ./slides/wiremock/Extending-StubLifecycleListener.md
----
----
-src: ./slides/wiremock/Extending-StubRequestFilter.md
----
----
-src: ./slides/wiremock/Extending-TemplateHelperProviderExtension.md
----
----
-src: ./slides/wiremock/Extending-TemplateModelDataProviderExtension.md
----
+

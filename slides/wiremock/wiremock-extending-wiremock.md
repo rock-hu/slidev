@@ -1,7 +1,7 @@
 ---
 layout: default 
 title: wiremock-extending-wiremock  
-zoom: 0.6   
+zoom: 0.9   
 disabled: false 
 hide: false 
 hideInToc: false    
@@ -26,6 +26,7 @@ At present, the following extension interfaces are available:
 `TemplateHelperProviderExtension`: Provide custom Handlebars helpers to the template engine. See Adding Template Helpers.    
 `TemplateModelDataProviderExtension`: Provide additional data to the model passed to response templates. See Adding Template Model Data.    
 `MappingsLoaderExtension`: Provide additional source to load the stub mappings. See Adding Mappings Loader.    
+
 
 
 > Registering Extensions    

@@ -1,7 +1,7 @@
 ---
 layout: default 
 title: wiremock-simulating-faults  
-zoom: 0.6   
+zoom: 1.0   
 disabled: false 
 hide: false 
 hideInToc: false    
@@ -11,19 +11,21 @@ preload: true
 
 # wiremock-simulating-faults   
 
+
 > Global fixed stub delays     
 
+<Transform :scale="0.8">
 ```json
 {
     "fixedDelay": 500
 }
 ```
-
+</Transform>
 
 > Available distributions    
 
 - Lognormal delay
-
+<Transform :scale="0.8">
 ```json
 {
     "delayDistribution": {
@@ -33,9 +35,10 @@ preload: true
     }
 }
 ```
-
+</Transform>
 
 - Uniform delay
+<Transform :scale="0.8">
 ```json
 {
     "delayDistribution": {
@@ -45,9 +48,10 @@ preload: true
     }
 }
 ```
-
+</Transform>
 
 > Chunked Dribble Delay    
+<Transform :scale="0.8">
 ```json
 {
     "chunkedDribbleDelay": {
@@ -56,3 +60,4 @@ preload: true
     }
 }
 ```
+</Transform>

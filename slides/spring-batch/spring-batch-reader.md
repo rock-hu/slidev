@@ -21,7 +21,7 @@ preload: true
 
 ```plantuml
 @startuml
-skinparam handwritten true
+!option handwritten true
 skinparam linetype polyline
 skinparam linetype ortho
 

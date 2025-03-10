@@ -70,7 +70,7 @@ public interface ChunkListener extends StepListener {
 <Transform :scale="1.0">
 ```plantuml
 @startuml
-skinparam handwritten true
+!option handwritten true
 skinparam linetype polyline
 skinparam linetype ortho
 class Entity implements Serializable {

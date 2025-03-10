@@ -44,7 +44,7 @@ interface Tasklet {
 <Transform :scale="1.0">
 ```plantuml
 @startuml
-skinparam handwritten true
+!option handwritten true
 skinparam linetype polyline
 skinparam linetype ortho
 
