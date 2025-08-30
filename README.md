@@ -1,26 +1,17 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)
+# Welcome to [Slidev](https://github.com/slidevjs/slidev) 
 
-Pipeline status:  
-[![pipeline status](https://gitlab.com/internal-developer-platform/slidev/badges/master/pipeline.svg)](https://gitlab.com/internal-developer-platform/slidev/-/commits/master)    
-Coverage report:  
-[![coverage report](https://gitlab.com/internal-developer-platform/slidev/badges/master/coverage.svg)](https://gitlab.com/internal-developer-platform/slidev/-/commits/master)  
-Latest release:  
-[![Latest Release](https://gitlab.com/internal-developer-platform/slidev/-/badges/release.svg)](https://gitlab.com/internal-developer-platform/slidev/-/releases)
-
-
-
-| artifact                     | badge                                                                                                |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------- |
-| backstage                    | ![](https://github.com/rock-hu/slidev/actions/workflows/backstage.yaml/badge.svg)                    |
-| channels                     | ![](https://github.com/rock-hu/slidev/actions/workflows/channels.yaml/badge.svg)                     |
-| gitops                       | ![](https://github.com/rock-hu/slidev/actions/workflows/gitops.yaml/badge.svg)                       |
-| kubernetes                   | ![](https://github.com/rock-hu/slidev/actions/workflows/kubernetes.yaml/badge.svg)                   |
-| mobile                       | ![](https://github.com/rock-hu/slidev/actions/workflows/mobile.yaml/badge.svg)                       |
-| site-reliability-engineering | ![](https://github.com/rock-hu/slidev/actions/workflows/site-reliability-engineering.yaml/badge.svg) |
-| spring-batch                 | ![](https://github.com/rock-hu/slidev/actions/workflows/spring-batch.yaml/badge.svg)                 |
-| spring-boot                  | ![](https://github.com/rock-hu/slidev/actions/workflows/spring-boot.yaml/badge.svg)                  |
-| wiremock                     | ![](https://github.com/rock-hu/slidev/actions/workflows/wiremock.yaml/badge.svg)                     |
-| idp                          | ![](https://github.com/rock-hu/slidev/actions/workflows/idp.yaml/badge.svg)                          |
+| artifact                     | badge                                                                                               |
+| ---------------------------- | --------------------------------------------------------------------------------------------------- |
+| backstage                    | ![](https://github.com/rock-hu/slidev/actions/workflows/backstage.yml/badge.svg)                    |
+| channels                     | ![](https://github.com/rock-hu/slidev/actions/workflows/channels.yml/badge.svg)                     |
+| gitops                       | ![](https://github.com/rock-hu/slidev/actions/workflows/gitops.yml/badge.svg)                       |
+| kubernetes                   | ![](https://github.com/rock-hu/slidev/actions/workflows/kubernetes.yml/badge.svg)                   |
+| mobile                       | ![](https://github.com/rock-hu/slidev/actions/workflows/mobile.yml/badge.svg)                       |
+| site-reliability-engineering | ![](https://github.com/rock-hu/slidev/actions/workflows/site-reliability-engineering.yml/badge.svg) |
+| spring-batch                 | ![](https://github.com/rock-hu/slidev/actions/workflows/spring-batch.yml/badge.svg)                 |
+| spring-boot                  | ![](https://github.com/rock-hu/slidev/actions/workflows/spring-boot.yml/badge.svg)                  |
+| wiremock                     | ![](https://github.com/rock-hu/slidev/actions/workflows/wiremock.yml/badge.svg)                     |
+| idp                          | ![](https://github.com/rock-hu/slidev/actions/workflows/idp.yml/badge.svg)                          |
 
 
 
@@ -71,37 +62,6 @@ npx npm-check-updates
 npm install -g plop
 ```
 
-```bash
-(base) Summers-MacBook-Pro:slidev nijiang$ slidev build --help
-slidev build [entry..]
-Positionals:
-  entry  path to the slides markdown entry        [array] [default: "slides.md"]
-
-Options:
-  -t, --theme            override theme                                 [string]
-      --output           path to the output                             [string]
-      --format           output format    [string] [choices: "pdf", "png", "md"]
-      --timeout          timeout for rendering the print page           [number]
-      --wait             wait for the specified ms before exporting     [number]
-      --range            page ranges to export, for example "1,4-5,6"   [string]
-      --dark             export as dark theme                          [boolean]
-  -c, --with-clicks      export pages for every clicks                 [boolean]
-      --executable-path  executable to override playwright bundled browser
-                                                                        [string]
-      --with-toc         export pages with outline                     [boolean]
-      --per-slide        slide slides slide by slide. Works better with global c
-                         omponents, but will break cross slide links and TOC in
-                         PDF                                           [boolean]
-      --scale            scale factor for image export                  [number]
-  -w, --watch            build watch                            [default: false]
-  -o, --out              output dir                   [string] [default: "dist"]
-      --base             output base                                    [string]
-  -d, --download         allow download as PDF                         [boolean]
-      --inspect          enable the inspect plugin for debugging
-                                                      [boolean] [default: false]
-  -h, --help             Show help                                     [boolean]
-  -v, --version          Show version number                           [boolean]
-```
 
 ## netlify-cli
 
@@ -144,36 +104,11 @@ COMMANDS
   $ sites:list              List all sites you have access to
 ```
 
-```bash
-netlify sites:create --name slidev-internal-developer-platform
-netlify sites:create --name slidev-backstage
-netlify sites:create --name slidev-channels
-netlify sites:create --name slidev-gitops
-netlify sites:create --name slidev-kubernetes
-netlify sites:create --name slidev-site-reliability-engineering
-netlify sites:create --name slidev-spring-batch
-netlify sites:create --name slidev-spring-boot
-netlify sites:create --name slidev-wiremock
-netlify sites:create --name slidev-mobile
-```
-
-```bash
-netlify sites:list | grep 'url:  https://slidev-'
-✔ Loading your sites
-  url:  https://slidev-spring-boot.netlify.app
-  url:  https://slidev-site-reliability-engineering.netlify.app
-  url:  https://slidev-kubernetes.netlify.app
-  url:  https://slidev-gitops.netlify.app
-  url:  https://slidev-channels.netlify.app
-  url:  https://slidev-backstage.netlify.app
-  url:  https://slidev-wiremock.netlify.app
-  url:  https://slidev-spring-batch.netlify.app
-```
 
 ## netlify deploy
 
 ```dotnetcli
-(base) Summers-MacBook-Pro:netlify nijiang$ netlify help deploy
+netlify help deploy
 Create a new deploy from the contents of a folder
 
 USAGE
