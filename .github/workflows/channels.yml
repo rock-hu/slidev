@@ -1,4 +1,4 @@
-name: slidev-pages
+name: channels
 
 on:
   workflow_dispatch: {}
@@ -6,8 +6,8 @@ on:
     branches:
       - master
     paths:
-      - "slides-*.md"
-      - "slides/**/*.md"
+      - "slides-channels.md"
+      - "slides/channels/*.md"
       - "package.json"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -29,9 +29,6 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: slides-build
-        run: npm run build
-      - name: slides-copy
-        run: copy-slides.sh
-      - name: deployment
-        id: deployment
-        uses: actions/deploy-pages@v4
+        run: npm run build:channels
+      - name: slides-ls
+        run: ls -l channels

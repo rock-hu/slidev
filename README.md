@@ -1,89 +1,4 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev) 
-
-
-
-```
-git clone git@gitlab.com:internal-developer-platform/releases-dashboard.git
-git clone git@gitlab.com:internal-developer-platform/openbanking-payments.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-git clone git@gitlab.com:internal-developer-platform/.git
-```
-
-
-
-```bash
-gh extension install github/gh-actions-importer
-```
-> To get started with GitHub CLI, please run:  `gh auth login`
-> Alternatively, populate the `GH_TOKEN` environment variable with a GitHub API authentication token.
-
-```bash
-gh actions-importer -h
-unknown command "actions-importer" for "gh"
-
-Usage:  gh <command> <subcommand> [flags]
-
-Available commands:
-  alias
-  api
-  attestation
-  auth
-  browse
-  cache
-  co
-  codespace
-  completion
-  config
-  extension
-  gist
-  gpg-key
-  issue
-  label
-  org
-  pr
-  project
-  release
-  repo
-  ruleset
-  run
-  search
-  secret
-  ssh-key
-  status
-  variable
-  workflow
-```
-
-
-- github  
-
-Your token must have the `workflow` scope.  
-
-- gitlab
-
-Your token must have the `read_api` scope.
-
-```bash
-gh actions-importer configure
-✔ Which CI providers are you configuring?: GitLab
-Enter the following values (leave empty to omit):
-✔ Personal access token for GitHub: ***************
-✔ Base url of the GitHub instance: https://github.com
-✔ Private token for GitLab: ***************
-✔ Base url of the GitLab instance: http://localhost
-Environment variables successfully updated.
-```
-
+# Welcome to [Slidev](https://github.com/slidevjs/slidev)
 
 Pipeline status:  
 [![pipeline status](https://gitlab.com/internal-developer-platform/slidev/badges/master/pipeline.svg)](https://gitlab.com/internal-developer-platform/slidev/-/commits/master)    
@@ -91,6 +6,23 @@ Coverage report:
 [![coverage report](https://gitlab.com/internal-developer-platform/slidev/badges/master/coverage.svg)](https://gitlab.com/internal-developer-platform/slidev/-/commits/master)  
 Latest release:  
 [![Latest Release](https://gitlab.com/internal-developer-platform/slidev/-/badges/release.svg)](https://gitlab.com/internal-developer-platform/slidev/-/releases)
+
+
+
+| artifact                     | badge                                                                                                |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------- |
+| backstage                    | ![](https://github.com/rock-hu/slidev/actions/workflows/backstage.yaml/badge.svg)                    |
+| channels                     | ![](https://github.com/rock-hu/slidev/actions/workflows/channels.yaml/badge.svg)                     |
+| gitops                       | ![](https://github.com/rock-hu/slidev/actions/workflows/gitops.yaml/badge.svg)                       |
+| kubernetes                   | ![](https://github.com/rock-hu/slidev/actions/workflows/kubernetes.yaml/badge.svg)                   |
+| mobile                       | ![](https://github.com/rock-hu/slidev/actions/workflows/mobile.yaml/badge.svg)                       |
+| site-reliability-engineering | ![](https://github.com/rock-hu/slidev/actions/workflows/site-reliability-engineering.yaml/badge.svg) |
+| spring-batch                 | ![](https://github.com/rock-hu/slidev/actions/workflows/spring-batch.yaml/badge.svg)                 |
+| spring-boot                  | ![](https://github.com/rock-hu/slidev/actions/workflows/spring-boot.yaml/badge.svg)                  |
+| wiremock                     | ![](https://github.com/rock-hu/slidev/actions/workflows/wiremock.yaml/badge.svg)                     |
+| idp                          | ![](https://github.com/rock-hu/slidev/actions/workflows/idp.yaml/badge.svg)                          |
+
+
 
 | slidev                                                                                  | netlify badge                                                                                                                                                                            |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -114,7 +46,6 @@ git config --global commit.template $HOME/.gitcommitmsg.txt
 
 ```bash
 npm config get registry
-npm config set registry=https://registry.npmjs.org
 ```
 
 ## slidev

@@ -86,36 +86,32 @@ Read more about [Why Slidev?](https://sli.dev/guide/why)
 src: ./slides/agenda.md
 hide: false
 ---
+
+
+
+
 ---
-src: ./slides/wiremock/wiremock.md
+src: ./slides/idp/Access-Management.md
 hide: false
 ---
 ---
-src: ./slides/wiremock/wiremock-stubbing.md
+src: ./slides/idp/Directory-Services.md
 hide: false
 ---
 ---
-src: ./slides/wiremock/wiremock-request-matching.md
+src: ./slides/idp/Identity-Connectors.md
 hide: false
 ---
 ---
-src: ./slides/wiremock/wiremock-response-templating.md
+src: ./slides/idp/Identity-Gateway.md
 hide: false
 ---
 ---
-src: ./slides/wiremock/wiremock-record-playback.md
+src: ./slides/idp/Identity-Management.md
 hide: false
 ---
 ---
-src: ./slides/wiremock/wiremock-simulating-faults.md
-hide: false
----
----
-src: ./slides/wiremock/wiremock-extending-wiremock.md
-hide: false
----
----
-src: ./slides/wiremock/wiremock-apis.md
+src: ./slides/idp/Identity-Platform.md
 hide: false
 ---
 

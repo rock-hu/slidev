@@ -41,30 +41,12 @@
 
 
 
-
-
 # npx plop slide mobile mobile-compose-components default
 # npx plop slide mobile mobile-compose-layouts default
 # npx plop slide mobile mobile-compose-state-management default
 # npx plop slide mobile mobile-compose-animations-transitions default
 # npx plop slide mobile mobile-compose-navigation default
 # npx plop slide mobile mobile-compose-storage default
-# npx plop slide mobile mobile-compose-side-effects default
-# npx plop slide idp Identity-Platform default
-# npx plop slide idp Identity-Management default
-# npx plop slide idp Access-Management default
-# npx plop slide idp Identity-Connectors default
-# npx plop slide idp Identity-Gateway default
-# npx plop slide idp Directory-Services default
 
-npx plop slide wiremock Extending-RequestFilter default
-npx plop slide wiremock Extending-StubRequestFilter default
-npx plop slide wiremock Extending-ResponseDefinitionTransformer default
-npx plop slide wiremock Extending-ResponseTransformer default
-npx plop slide wiremock Extending-ServeEventListener default
-npx plop slide wiremock Extending-RequestMatcherExtension default
-npx plop slide wiremock Extending-MappingsLoaderExtension default
-npx plop slide wiremock Extending-GlobalSettingsListener default
-npx plop slide wiremock Extending-StubLifecycleListener default
-npx plop slide wiremock Extending-TemplateHelperProviderExtension default
-npx plop slide wiremock Extending-TemplateModelDataProviderExtension default
+# npx plop slide mobile mobile-compose-side-effects default
+npx plop slide mobile mobile-composable-component-guidelines default
