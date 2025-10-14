@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "prebuild": "sh clean-slides.sh",
-    "build": "concurrently --max-processes 20 --timings true 'yarn:build:*'",
+    "build": "concurrently --max-processes 1 --timings true 'yarn:build:*'",
     "build:backstage": "slidev build slides-backstage.md --out backstage",
     "build:gitops": "slidev build slides-gitops.md --out gitops",
     "build:kubernetes": "slidev build slides-kubernetes.md --out kubernetes",
