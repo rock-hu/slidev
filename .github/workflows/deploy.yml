@@ -39,7 +39,9 @@ jobs:
       - name: slides-build
         run: npm run build
       - name: slides-copy
-        run: copy-slides.sh
+        run: |
+          chmod 755 *.sh
+          ./copy-slides.sh
       - name: Upload artifact
         uses: actions/upload-artifact@v4
 
