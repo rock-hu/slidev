@@ -25,7 +25,7 @@ export default function (plop) {
                 templateFile: 'templates/slide-{{layout}}.hbs',
                 abortOnFail: false,
                 skipIfExists: false,
-                force: true,
+                force: false,
             },
         ],
     });

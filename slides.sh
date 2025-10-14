@@ -49,4 +49,24 @@
 # npx plop slide mobile mobile-compose-storage default
 
 # npx plop slide mobile mobile-compose-side-effects default
-npx plop slide mobile mobile-composable-component-guidelines default
+# npx plop slide mobile mobile-composable-component-guidelines default
+
+
+npx plop slide data-mesh data-mesh-architecture default
+npx plop slide data-mesh data-mesh-stackable default
+npx plop slide data-mesh data-mesh-opendatamesh default
+npx plop slide data-mesh data-mesh-metadata default
+npx plop slide data-mesh data-mesh-opendatadiscovery default
+npx plop slide data-mesh data-mesh-data-product default
+npx plop slide data-mesh data-mesh-clean-data default
+npx plop slide data-mesh data-mesh-analytics default
+npx plop slide data-mesh data-mesh-data-platform default
+npx plop slide data-mesh data-mesh-enabling-team default
+npx plop slide data-mesh data-mesh-ingesting default
+npx plop slide data-mesh data-mesh-transformations default
+npx plop slide data-mesh data-mesh-apache-beam default
+npx plop slide data-mesh data-mesh-federated-governance default
+npx plop slide data-mesh data-mesh-data-contract default
+npx plop slide data-mesh data-mesh-snowflake default
+
+npx plop slide data-mesh data-mesh-journey  default
