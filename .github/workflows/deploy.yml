@@ -52,7 +52,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          branch: gh-pages
-          folder: public
-          clean: true
+          # Unexpected input(s) 'branch', 'folder', 'clean', valid inputs are ['token', 'timeout', 'error_count', 'reporting_interval', 'artifact_name', 'preview']
           token: ${{ secrets.GITHUB_TOKEN }}
