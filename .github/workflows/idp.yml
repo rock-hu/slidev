@@ -9,6 +9,7 @@ on:
       - "slides-idp.md"
       - "slides/idp/*.md"
       - "package.json"
+      - ".github/workflows/idp.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

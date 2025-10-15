@@ -9,6 +9,7 @@ on:
       - "slides-mobile.md"
       - "slides/mobile/*.md"
       - "package.json"
+      - ".github/workflows/mobile.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

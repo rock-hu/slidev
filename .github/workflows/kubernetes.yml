@@ -9,6 +9,7 @@ on:
       - "slides-kubernetes.md"
       - "slides/kubernetes/*.md"
       - "package.json"
+      - ".github/workflows/kubernetes.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

@@ -9,6 +9,7 @@ on:
       - "slides-backstage.md"
       - "slides/backstage/*.md"
       - "package.json"
+      - ".github/workflows/backstage.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

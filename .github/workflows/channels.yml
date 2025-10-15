@@ -9,6 +9,7 @@ on:
       - "slides-channels.md"
       - "slides/channels/*.md"
       - "package.json"
+      - ".github/workflows/channels.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

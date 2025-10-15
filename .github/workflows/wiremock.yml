@@ -9,6 +9,7 @@ on:
       - "slides-wiremock.md"
       - "slides/wiremock/*.md"
       - "package.json"
+      - ".github/workflows/wiremock.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

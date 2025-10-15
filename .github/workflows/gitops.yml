@@ -9,6 +9,7 @@ on:
       - "slides-gitops.md"
       - "slides/gitops/*.md"
       - "package.json"
+      - ".github/workflows/gitops.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

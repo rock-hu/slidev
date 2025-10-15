@@ -9,6 +9,7 @@ on:
       - "slides-site-reliability-engineering.md"
       - "slides/site-reliability-engineering/*.md"
       - "package.json"
+      - ".github/workflows/site-reliability-engineering.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

@@ -9,6 +9,7 @@ on:
       - "slides-spring-batch.md"
       - "slides/spring-batch/*.md"
       - "package.json"
+      - ".github/workflows/spring-batch.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

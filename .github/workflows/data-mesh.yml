@@ -9,6 +9,7 @@ on:
       - "slides-data-mesh.md"
       - "slides/data-mesh/*.md"
       - "package.json"
+      - ".github/workflows/data-mesh.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:

@@ -9,6 +9,7 @@ on:
       - "slides-*.md"
       - "slides/**/*.md"
       - "package.json"
+      - ".github/workflows/deploy.yml"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -44,6 +45,8 @@ jobs:
           ./copy-slides.sh
       - name: Upload artifact
         uses: actions/upload-artifact@v4
+        with:
+          path: public
 
   # Deployment job
   deploy:
@@ -51,6 +54,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     needs: build
     steps:
       - name: Deploy to GitHub Pages
