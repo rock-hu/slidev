@@ -1,5 +1,4 @@
-# slidev    
-
+# slidev
 
 | name                         | command                                                        |
 | ---------------------------- | -------------------------------------------------------------- |
@@ -13,3 +12,4 @@
 | channels                     | [channels](./channels)                                         |
 | idp                          | [idp](./idp)                                                   |
 | site-reliability-engineering | [site-reliability-engineering](./site-reliability-engineering) |
+| data-mesh                    | [data-mesh](./data-mesh)                                       |

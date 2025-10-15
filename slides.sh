@@ -70,3 +70,4 @@ npx plop slide data-mesh data-mesh-data-contract default
 npx plop slide data-mesh data-mesh-snowflake default
 
 npx plop slide data-mesh data-mesh-journey  default
+npx plop slide data-mesh data-mesh-dbt  default
