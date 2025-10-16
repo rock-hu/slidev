@@ -1,7 +1,7 @@
 ---
 layout: 2x2-grid-header 
 title: gitops-argo-cd  
-zoom: 0.6   
+zoom: 1.0   
 disabled: false 
 hide: false 
 hideInToc: false    

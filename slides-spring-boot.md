@@ -19,6 +19,7 @@ transition: slide-left
 title: Welcome to Spring Boot
 mdc: true
 download: true
+# exportFilename: Slidev-spring-boot.pdf
 plantUmlServer: 'https://www.plantuml.com/plantuml'
 # export:
 #   format: pdf
@@ -32,7 +33,7 @@ plantUmlServer: 'https://www.plantuml.com/plantuml'
 # aspect ratio for the slides
 aspectRatio: 16/9
 # real width of the canvas, unit in px
-canvasWidth: 980
+canvasWidth: 1920
 ---
 
 # Welcome to Slidev

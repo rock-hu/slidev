@@ -47,6 +47,7 @@
     "dev:spring-boot": "slidev slides-spring-boot.md",
     "dev:data-mesh": "slidev slides-data-mesh.md",
     "plop": "plop",
+    "deploy": "gh-pages -d public --dotfiles --nojekyll --user rock.c.c.hu@gmail.com",
     "deploy:netlify": "concurrently --max-processes 1 --timings true 'yarn:netlify:*'",
     "deploy:vercel": "concurrently --max-processes 1 --timings true 'yarn:vercel:*'",
     "deploy:github": "npm run build"

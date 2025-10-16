@@ -1,7 +1,7 @@
 ---
 layout: default 
 title: spring-batch-processor  
-zoom: 0.6   
+zoom: 1.0   
 disabled: false 
 hide: false 
 hideInToc: false    

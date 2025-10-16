@@ -1,7 +1,7 @@
 ---
 layout: 2x1-grid 
 title: mobile-push-notifications  
-zoom: 0.6   
+zoom: 1.0   
 disabled: false 
 hide: false 
 hideInToc: false    
