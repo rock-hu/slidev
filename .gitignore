@@ -9,7 +9,6 @@ components.d.ts
 .netlify
 
 
-
 backstage/
 channels/
 gitops/
@@ -21,3 +20,16 @@ spring-boot/
 wiremock/
 idp/
 data-mesh/
+
+
+public/backstage/
+public/channels/
+public/gitops/
+public/kubernetes/
+public/mobile/
+public/site-reliability-engineering/
+public/spring-batch/
+public/spring-boot/
+public/wiremock/
+public/idp/
+public/data-mesh/
