@@ -7,7 +7,7 @@ on:
       - master
     paths:
       - "slides-spring-batch.md"
-      - "slides/spring-batch/*.md"
+      # - "slides/spring-batch/*.md"
       - "package.json"
       - ".github/workflows/spring-batch.yml"
 env:

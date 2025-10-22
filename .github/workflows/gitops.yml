@@ -7,7 +7,7 @@ on:
       - master
     paths:
       - "slides-gitops.md"
-      - "slides/gitops/*.md"
+      # - "slides/gitops/*.md"
       - "package.json"
       - ".github/workflows/gitops.yml"
 env:

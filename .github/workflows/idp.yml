@@ -7,7 +7,7 @@ on:
       - master
     paths:
       - "slides-idp.md"
-      - "slides/idp/*.md"
+      # - "slides/idp/*.md"
       - "package.json"
       - ".github/workflows/idp.yml"
 env:

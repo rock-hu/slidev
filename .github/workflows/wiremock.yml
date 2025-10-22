@@ -7,7 +7,7 @@ on:
       - master
     paths:
       - "slides-wiremock.md"
-      - "slides/wiremock/*.md"
+      # - "slides/wiremock/*.md"
       - "package.json"
       - ".github/workflows/wiremock.yml"
 env:

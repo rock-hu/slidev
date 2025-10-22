@@ -7,7 +7,7 @@ on:
       - master
     paths:
       - "slides-spring-boot.md"
-      - "slides/spring-boot/*.md"
+      # - "slides/spring-boot/*.md"
       - "package.json"
       - ".github/workflows/spring-boot.yml"
 env:

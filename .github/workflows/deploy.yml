@@ -5,8 +5,8 @@ on:
     branches:
       - master
     paths:
-      - "slides-*.md"
-      - "slides/**/*.md"
+      # - "slides-*.md"
+      # - "slides/**/*.md"
       - "package.json"
       - ".github/workflows/deploy.yml"
 env:

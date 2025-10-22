@@ -7,7 +7,7 @@ on:
       - master
     paths:
       - "slides-data-mesh.md"
-      - "slides/data-mesh/*.md"
+      # - "slides/data-mesh/*.md"
       - "package.json"
       - ".github/workflows/data-mesh.yml"
 env:

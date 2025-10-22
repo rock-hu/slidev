@@ -7,7 +7,7 @@ on:
       - master
     paths:
       - "slides-backstage.md"
-      - "slides/backstage/*.md"
+      # - "slides/backstage/*.md"
       - "package.json"
       - ".github/workflows/backstage.yml"
 env:
