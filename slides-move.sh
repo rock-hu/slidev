@@ -2,9 +2,9 @@
 while IFS="," read -r slide
 do
     echo $slide
-    mv -r ${slide} public
+    mv -f ${slide} public
+    pwd
     ls -l public/${slide}
 done <  topics.csv
 
 ls -l public
-rm -f .gitignore
