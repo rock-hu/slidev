@@ -7,6 +7,8 @@ on:
     paths:
       # - "slides-*.md"
       # - "slides/**/*.md"
+      - "slides-clean.sh"
+      - "slides-move.sh"
       - "package.json"
       - ".github/workflows/deploy.yml"
       - "public/index.html"
