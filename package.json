@@ -3,7 +3,7 @@
   "homepage": "https://rock-hu.github.io/slidev/",
   "private": true,
   "scripts": {
-    "prebuild": "sh clean-slides.sh",
+    "prebuild": "sh slides-clean.sh",
     "build": "concurrently --max-processes 1 --timings true 'yarn:build:*'",
     "build:backstage": "slidev build slides-backstage.md --base /slidev/backstage/ --out backstage",
     "build:gitops": "slidev build slides-gitops.md --base /slidev/gitops/ --out gitops",
