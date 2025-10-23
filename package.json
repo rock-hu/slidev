@@ -1,6 +1,6 @@
 {
   "name": "slidev",
-  "homepage": "https://gitlab.com/internal-developer-platform/slidev",
+  "homepage": "https://rock-hu.github.io/slidev/",
   "private": true,
   "scripts": {
     "prebuild": "sh clean-slides.sh",
@@ -26,6 +26,7 @@
     "netlify:spring-batch": "netlify deploy --dir spring-batch --build --prod --debug --site slidev-spring-batch --auth $NETLIFY_AUTH_TOKEN",
     "netlify:spring-boot": "netlify deploy --dir spring-boot --build --prod --debug --site slidev-spring-boot --auth $NETLIFY_AUTH_TOKEN",
     "netlify:idp": "netlify deploy --dir idp --build --prod --debug --site slidev-idp --auth $NETLIFY_AUTH_TOKEN",
+    "netlify:data-mesh": "netlify deploy --dir data-mesh --build --prod --debug --site slidev-data-mesh --auth $NETLIFY_AUTH_TOKEN",
     "vercel:backstage": "netlify deploy --dir backstage --build --prod --debug --site slidev-backstage --auth $NETLIFY_AUTH_TOKEN",
     "vercel:gitops": "netlify deploy --dir gitops --build --prod --debug --site slidev-gitops --auth $NETLIFY_AUTH_TOKEN",
     "vercel:kubernetes": "netlify deploy --dir kubernetes --build --prod --debug --site slidev-kubernetes --auth $NETLIFY_AUTH_TOKEN",
@@ -36,6 +37,7 @@
     "vercel:spring-batch": "netlify deploy --dir spring-batch --build --prod --debug --site slidev-spring-batch --auth $NETLIFY_AUTH_TOKEN",
     "vercel:spring-boot": "netlify deploy --dir spring-boot --build --prod --debug --site slidev-spring-boot --auth $NETLIFY_AUTH_TOKEN",
     "vercel:idp": "netlify deploy --dir idp --build --prod --debug --site slidev-idp --auth $NETLIFY_AUTH_TOKEN",
+    "vercel:data-mesh": "netlify deploy --dir data-mesh --build --prod --debug --site slidev-data-mesh --auth $NETLIFY_AUTH_TOKEN",
     "dev:backstage": "slidev slides-backstage.md",
     "dev:gitops": "slidev slides-gitops.md",
     "dev:kubernetes": "slidev slides-kubernetes.md",

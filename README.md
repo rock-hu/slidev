@@ -1,4 +1,4 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev) 
+# Welcome to [Slidev](https://github.com/slidevjs/slidev)
 
 | artifact                     | badge                                                                                               |
 | ---------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -12,8 +12,6 @@
 | spring-boot                  | ![](https://github.com/rock-hu/slidev/actions/workflows/spring-boot.yml/badge.svg)                  |
 | wiremock                     | ![](https://github.com/rock-hu/slidev/actions/workflows/wiremock.yml/badge.svg)                     |
 | idp                          | ![](https://github.com/rock-hu/slidev/actions/workflows/idp.yml/badge.svg)                          |
-
-
 
 | slidev                                                                                  | netlify badge                                                                                                                                                                            |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -62,7 +60,6 @@ npx npm-check-updates
 npm install -g plop
 ```
 
-
 ## netlify-cli
 
 [netlify-cli](https://docs.netlify.com/cli/get-started/)
@@ -103,7 +100,6 @@ COMMANDS
   $ sites:delete            Delete a site
   $ sites:list              List all sites you have access to
 ```
-
 
 ## netlify deploy
 
