@@ -22,9 +22,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
-      - name: install dependencies
+      - name: npm install
         run: npm install
-      - name: slides-build
+      - name: npm run build
         run: npm run build
       - name: slides-copy
         run: |
@@ -34,8 +34,8 @@ jobs:
       - run: git config --global user.email "rock.c.c.hu@gmail.com"
       - run: git config --global user.name "Rock Hu"
       - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-      - run: npm install
-      - run: npm run deploy
+      - name: npm run deploy
+        run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: rock-hu/slidev
