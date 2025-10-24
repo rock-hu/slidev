@@ -28,11 +28,6 @@ jobs:
         run: npm install
       - name: npm run build
         run: npm run build
-      - name: slides-copy
-        run: |
-          chmod 755 *.sh
-          ./slides-clean.sh
-          ./slides-move.sh
       - run: ls -l public
       - run: git config --global user.email "rock.c.c.hu@gmail.com"
       - run: git config --global user.name "Rock Hu"
