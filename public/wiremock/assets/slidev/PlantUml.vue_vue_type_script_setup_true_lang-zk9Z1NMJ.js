@@ -1,0 +1,1 @@
+import{d as s,z as l,f as c,o,k as n}from"../modules/vue-CBxHhhlZ.js";const r=["src","alt"],u=s({__name:"PlantUml",props:{code:{},server:{},scale:{},alt:{default:"PlantUML diagram"}},setup(e){const a=e,t=l(()=>`${a.server}/svg/${a.code}`);return(m,d)=>(o(),c("img",{src:t.value,style:n({scale:e.scale}),alt:e.alt},null,12,r))}});export{u as _};

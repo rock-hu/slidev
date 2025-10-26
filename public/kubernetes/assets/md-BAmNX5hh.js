@@ -1,0 +1,3 @@
+import{b as s,o as n,w as a,i as m,g as u,v as i,x as p,T as t}from"./modules/vue-Bo_l8wuD.js";import{I as l}from"./slidev/default-CGoEt8vg.js";import{u as c,f as d}from"./slidev/context-C5x8X1bC.js";import"./index-CRoQQuYP.js";import"./modules/shiki-B1wnBfLT.js";const C={__name:"kubernetes-multi-cloud.md__slidev_29",setup(f){const{$clicksContext:o,$frontmatter:r}=c();return o.setup(),(_,e)=>(n(),s(l,i(p(t(d)(t(r),28))),{default:a(()=>[m(`
+https://www.manning.com/books/platform-engineering-on-kubernetes
+`),e[0]||(e[0]=u("h1",null,"kubernetes-multi-cloud",-1))]),_:1},16))}};export{C as default};
