@@ -34,8 +34,3 @@ jobs:
       - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
       - name: npm run deploy
         run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: rock-hu/slidev
-          BRANCH: gh-pages
-          FOLDER: public
