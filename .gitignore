@@ -8,28 +8,3 @@ components.d.ts
 # Local Netlify folder
 .netlify
 
-
-backstage/
-channels/
-gitops/
-kubernetes/
-mobile/
-site-reliability-engineering/
-spring-batch/
-spring-boot/
-wiremock/
-idp/
-data-mesh/
-
-
-public/backstage/
-public/channels/
-public/gitops/
-public/kubernetes/
-public/mobile/
-public/site-reliability-engineering/
-public/spring-batch/
-public/spring-boot/
-public/wiremock/
-public/idp/
-public/data-mesh/
